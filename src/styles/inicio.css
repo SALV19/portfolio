@@ -1,0 +1,8 @@
+.list:hover .list-element {
+  filter: grayscale(1) blur(4px);
+  transition: all 0.3s ease;
+}
+
+.list:hover .list-element:hover {
+  filter: none;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { navbar } from './constants/navbar'
+import { navbar } from './constants/constants'
 import Link from 'next/link'
 
 const Navbar = () => {
@@ -10,8 +10,10 @@ const Navbar = () => {
   }
   
   return (
-    <nav className='flex items-center justify-between px-2 fixed w-screen mt-0.5'>
-      <img src='logoS.png' className='h-14 hover:bg-gray-600 rounded-md'/>
+    <nav className='flex items-center justify-between px-2 fixed w-screen mt-0.5 top-0'>
+      <Link href={'/'} >
+        <img src='icons/logoS.png' className='h-14 hover:bg-gray-600 bg-opacity-50 rounded-md'/>
+      </Link>
       <span className='w-1/2 flex justify-around'>
         {navbar.map(item => button(item))}
       </span>
