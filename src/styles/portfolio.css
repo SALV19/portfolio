@@ -1,0 +1,25 @@
+.list-3d {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.list-3d .item {
+  transition: 0.5s;
+}
+
+.list-3d .item:hover {
+  transform: translateZ(100px);
+}
+.list-3d .item:has(+ *:hover) {
+  transform: translateZ(-50px) rotateY(-30deg);
+}
+.list-3d .item:has(+ * + *:hover) {
+  transform: translateZ(-100px) rotateY(-10deg);
+}
+
+.list-3d .item:hover + .item {
+  transform: translateZ(-50px) rotateY(30deg);
+}
+.list-3d .item:hover + .item + .item {
+  transform: translateZ(-100px) rotateY(10deg);
+}

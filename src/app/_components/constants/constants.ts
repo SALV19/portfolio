@@ -8,7 +8,7 @@ export const navbar = [
             name: 'About me',
           },
           {
-            link: '/portfolio',
+            link: '#portfolio',
             name: 'Portfolio',
           },
         ]
@@ -35,5 +35,22 @@ export const cards = [
     name: "Payday",
     description: "sifsdifsfoewfij",
   },
-  
+]
+
+export const projects = [
+  {
+    name: "ACM Web Page",
+    image: '/images/acmWeb/MainPage.png',
+    href: '/views/ACM',
+  },
+  {
+    name: "Querétaro si Sonrie",
+    image: '/images/queretaroSS/MainPage.png',
+    href: '/views/QSS',
+  },
+  {
+    name: "MXREP",
+    image: '/images/novus/MainPage.png',
+    href: '/views/Novus',
+  },
 ]
